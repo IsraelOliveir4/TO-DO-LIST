@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+display: inline-block;
+}
+
+.container1{
+    background: url('../IMG/Banner.png') no-repeat; 
+    width: 755px;
+    height: 510px;
+    display:inline-block;
+}
+.container2{
+    height: auto;
+    width: 40%;
+    position: fixed;
+    display: inline-block;
+}
+.form-control{
+    width: 100%;
+}
+
+.container3{
+    width: 40%;
+    display: inline-block;
+    margin-top: 19%;
+    position: fixed;
+}
+.btn1Email{
+color: red;
+}
