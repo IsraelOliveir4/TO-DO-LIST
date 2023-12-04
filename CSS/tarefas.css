@@ -1,0 +1,46 @@
+.cont1{
+    background-color: rgba(0, 0, 0, 0.800);
+    color: white;
+    width: auto;
+    height: 100px;
+}
+ .cont1 h2{
+    margin-left: 2%;
+    display: inline-block;
+    height: 100px;
+    width: 182px;
+    position: fixed;
+ }
+ #sairTarefas{
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 93%;
+    background-color: transparent;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border: none;
+ }
+ .cont2{
+    text-align: -webkit-center;
+ }
+ #formTarefa{
+    width: 45%;
+ }
+ .datainicio{
+    width: 49%;
+    display: inline-block;
+ }
+ .datatermino{
+    width: 49%;
+    display: inline-block;
+ }
+ .horainicio{
+    width: 49%;
+    display: inline-block;
+ }
+ .horatermino{
+    width: 49%;
+    display: inline-block;
+ }
+
