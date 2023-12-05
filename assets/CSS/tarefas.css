@@ -2,13 +2,14 @@
     background-color: rgba(0, 0, 0, 0.800);
     color: white;
     width: auto;
-    height: 100px;
+    height: 70px;
 }
  .cont1 h2{
     margin-left: 2%;
+    margin-top: 1%;
     display: inline-block;
     height: 100px;
-    width: 182px;
+    width: 287px;
     position: fixed;
  }
  #sairTarefas{
@@ -18,7 +19,7 @@
     background-color: transparent;
     color: white;
     width: 100px;
-    height: 100px;
+    height: 65px;
     border: none;
  }
  .cont2{
