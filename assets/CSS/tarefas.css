@@ -12,6 +12,11 @@
     width: 287px;
     position: fixed;
  }
+
+ td {
+   border: 1px solid #ffffff;
+}
+
  #sairTarefas{
     text-decoration: none;
     display: inline-block;

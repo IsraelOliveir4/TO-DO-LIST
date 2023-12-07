@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/CSS/tarefas.css">
 </head>
-<body>
+<>
     <header>
         <div class="cont1">
             <H2>Olá, seja bem vindo</H2>
@@ -21,22 +21,22 @@
         <h2>Gerenciador de Tarefas</h2>
         <form action="#" id="formTarefa">
             <div class="mb-3">
-                <input type="text" class="form-control" id="texto" placeholder="Tarefa">
+                <input type="text" class="form-control" id="texto" placeholder="Tarefa" required>
             </div>
             <div class="mb-3 datainicio">
-                <input type="date" class="form-control" id="dataInicio" aria-describedby="emailHelp" placeholder="Data início">
+                <input type="date" class="form-control" id="dataInicio" aria-describedby="emailHelp" placeholder="Data início" required>
             </div>
             <div class="mb-3 horainicio">
-                <input type="time" class="form-control" id="horaInicio" aria-describedby="emailHelp" placeholder="Hora início">
+                <input type="time" class="form-control" id="horaInicio" aria-describedby="emailHelp" placeholder="Hora início" required>
             </div>
             <div class="mb-3 datatermino">
-                <input type="date" class="form-control" id="dataTermino" aria-describedby="emailHelp" placeholder="Data término">
+                <input type="date" class="form-control" id="dataTermino" aria-describedby="emailHelp" placeholder="Data término" required>
             </div>
             <div class="mb-3 horatermino">
-                <input type="time" class="form-control" id="horaTermino" aria-describedby="emailHelp" placeholder="Hora término">
+                <input type="time" class="form-control" id="horaTermino" aria-describedby="emailHelp" placeholder="Hora término" required>
             </div>
             <div class="mb-3">
-                <textarea class="form-control" id="descricao" rows="3" placeholder="Descrição"></textarea>
+                <textarea class="form-control" id="descricao" rows="3" placeholder="Descrição" required></textarea>
             </div>
                 <button onclick="cadastrarTarefa()" type="submit" class="btn btn-primary">Criar tarefa</button>
         </form>
@@ -50,7 +50,7 @@
                     <th>Início</th>
                     <th>Término</th>
                     <th>Status</th>
-                    <th>Ações</th>
+                    <th>Alterar</th>
                 </tr>
             </thead>
             <tbody id="tarefasTableBody">                
@@ -67,11 +67,6 @@
             <button class="fechar-btn" onclick="fecharModalDescricao()">Fechar</button>
         </div>
     </div>
-
-    <script src="./assets/JS/script.js"></script>
-</body>
-
-</html>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./assets/JS/script.js"></script>
