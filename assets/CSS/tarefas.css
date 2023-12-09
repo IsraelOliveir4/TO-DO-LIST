@@ -17,6 +17,10 @@
    border: 1px solid #ffffff;
 }
 
+tr {
+   border: 1px solid #ffffff;
+}
+
  #sairTarefas{
     text-decoration: none;
     display: inline-block;
@@ -26,6 +30,7 @@
     width: 100px;
     height: 65px;
     border: none;
+    font-size: 30px;
  }
  .cont2{
     text-align: -webkit-center;
@@ -124,7 +129,7 @@
 
 .botao-alterar {
    font-size: 20px; 
-   color:  rgb(45, 4, 86);
+   color:  rgb(247, 203, 10);
    border: none;
    font-weight: bold;
    background-color:  rgb(192, 143, 239);

@@ -29,6 +29,8 @@ form.addEventListener('submit', e => {
 
     window.location.href = "tarefas.html"
     })
+
+    cadastrarTarefa()
 }
 
 function capturarDadosForm2() {
