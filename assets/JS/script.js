@@ -148,7 +148,7 @@ function carregarTarefas(usuario) {
             botaoAlterar.innerText = "Alterar";
             botaoAlterar.classList.add("botao-alterar");
             botaoAlterar.onclick = function () {
-                redirecionarParaPaginaAlterar(tarefa.id); 
+                openModal(tarefa.id);
             };
            
             colunaAcoes.appendChild(botaoAlterar);           
@@ -156,8 +156,27 @@ function carregarTarefas(usuario) {
     });
 }
 
-function redirecionarParaPaginaAlterar(tarefaId) {    
-    window.location.href = "alterarTarefa.html?tarefaId=" + tarefaId;
+function openModal(edit = false, tarefaId) {    
+    
+  const modal = document.querySelector('.modal-container')
+  
+  modal.classList.add('active')
+
+  modal.onclick = e => {
+    if (e.target.className.indexOf('modal-container') !== -1) {
+      modal.classList.remove('active')
+    }
+  }
+
+  if (edit) {
+    sNome.value = itens[tarefaId].titulo
+    sFuncao.value = itens[tarefaId].dataAtual
+    id = tarefaId
+  } else {
+    sNome.value = ''
+    sFuncao.value = ''
+  }
+  
 }
 
 
@@ -179,8 +198,7 @@ function verificarStatus(tarefa) {
 
 function apagarTodosUsuarios() {    
     localStorage.removeItem('usuarios');
-    localStorage.removeItem('tarefas');
-    
+    localStorage.removeItem('tarefas'); 
     localStorage.removeItem('usuario');
     localStorage.removeItem('tarefa');
     

@@ -56,14 +56,34 @@
             </tbody>
         </table>
     </div>
-    <div id="modalDescricao" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="fecharModalDescricao()">&times;</span>
-            <h2 id="modalTitulo"></h2>
-            <hr class="separador">
-            <p id="modalDescricaoTexto"></p>
-            <hr class="separador">
-            <button class="fechar-btn" onclick="fecharModalDescricao()">Fechar</button>
+
+    <div class="modal-container">
+        <div class="modal">
+            <form action="#" id="formTarefa">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="modal-texto" placeholder="Tarefa" required>
+                </div>
+                <div class="mb-3 datainicio">
+                    <input type="date" class="form-control" id="modal-dataInicio" aria-describedby="emailHelp" placeholder="Data início" required>
+                </div>
+                <div class="mb-3 horainicio">
+                    <input type="time" class="form-control" id="modal-horaInicio" aria-describedby="emailHelp" placeholder="Hora início" required>
+                </div>
+                <div class="mb-3 datatermino">
+                    <input type="date" class="form-control" id="modal-dataTermino" aria-describedby="emailHelp" placeholder="Data término" required>
+                </div>
+                <div class="mb-3 horatermino">
+                    <input type="time" class="form-control" id="modal-horaTermino" aria-describedby="emailHelp" placeholder="Hora término" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="modal-descricao" rows="3" placeholder="Descrição" required></textarea>
+                </div>
+                    <button onclick="" type="submit" class="btn btn-primary">Alterar tarefa</button>
+                    <button onclick="" type="submit" class="btn btn-primary">Excluir tarefa</button>
+                    <button onclick="" type="submit" class="btn btn-primary">Marcar como realizada</button>
+                    <button onclick="" type="submit" class="btn btn-primary">Marcar como não realizada</button>
+                    <button onclick="" type="submit" class="btn btn-primary">Cancelar</button>
+            </form>
         </div>
     </div>
 
