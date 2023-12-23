@@ -28,25 +28,27 @@
     text-align: -webkit-center;
  }
  #formTarefa{
-    width: 45%;
+    width: 47%;
  }
  .datainicio{
-    width: 49%;
+    width: 40%;
     display: inline-block;
  }
  .datatermino{
-    width: 49%;
+    width: 40%;
     display: inline-block;
  }
  .horainicio{
-    width: 49%;
+    width: 40%;
     display: inline-block;
  }
  .horatermino{
-    width: 49%;
+    width: 40%;
     display: inline-block;
  }
-
+ .form-label{
+   display: inline-block;
+   }
 
  #formularioTarefa form button:hover {
    background-color: rgb(170, 101, 235);
@@ -163,7 +165,6 @@ thead {
    color: white;
    font-size: 20px; 
    border: none;
-   font-weight: bold;
    border-radius: 20px; 
 }
 
